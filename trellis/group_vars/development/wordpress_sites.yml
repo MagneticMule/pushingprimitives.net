@@ -1,0 +1,33 @@
+# Documentation: https://roots.io/trellis/docs/local-development-setup/
+# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
+# Define accompanying passwords/secrets in group_vars/development/vault.yml
+
+wordpress_sites:
+  pushingprimitives.net:
+    site_hosts:
+      - canonical: pushingprimitives.test
+        redirects:
+          - www.pushingprimitives.test
+    local_path: ../pp # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: skywriter@gmail.com
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
+  whitelightphotography.co.uk:
+    site_hosts:
+      - canonical: whitelightphotography.test
+        redirects:
+          - www.whitelightphotography.test
+    local_path: ../cherrie # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: skywriter@gmail.com
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false

@@ -1,0 +1,154 @@
+/**
+Theme Name: FabMasonry
+Author: Shark Themes
+Author URI: http://sharkthemes.com/
+Version: 1.0.0
+Template: fabulist
+Text Domain: fabmasonry
+Description: FabMasonry is a photography oriented and masonry gutenberg ready child theme of Fabulist. Theme Demo: http://demo.sharkthemes.com/fabmasonry/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: translation-ready, custom-header, custom-background, theme-options, custom-menu, threaded-comments, featured-images, footer-widgets, right-sidebar, full-width-template, two-columns, three-columns, grid-layout, custom-logo, blog, portfolio, photography
+
+FabMasonry is a child theme of Fabulist WordPress Theme, Copyright 2019 Shark Themes
+FabMasonry is distributed under the terms of the GNU General Public License v3
+
+Fabulist WordPress Theme, Copyright 2019 Shark Themes
+Fabulist is distributed under the terms of the GNU General Public License v3
+*/
+
+.image-focus-masonry .blog-posts-wrapper article .post-wrapper {
+    position: relative;
+}
+.image-focus-masonry .blog-posts-wrapper article.has-post-thumbnail .entry-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.9);
+    padding: 25px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate( -50%, -50% );
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.image-focus-masonry .blog-posts-wrapper article.has-post-thumbnail .entry-container:after {
+    z-index: -1;
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
+    border: 1px solid #fff;
+    content: "";
+}
+.image-focus-masonry .blog-posts-wrapper article.has-post-thumbnail .entry-container .entry-content {
+    display: none;
+}
+.image-focus-masonry .blog-posts-wrapper article.has-post-thumbnail:hover .entry-container {
+    opacity: 1;
+}
+
+/*color*/
+
+.backtotop,
+#colophon,
+.site-info,
+.post-navigation:before,
+.posts-navigation:before,
+.post-navigation:after,
+.posts-navigation:after,
+input[type="submit"],
+.reply a,
+.black-overlay,
+.separator,
+.section-separator:before,
+.wp-block-button__link,
+.wpcf7 input.wpcf7-form-control.wpcf7-submit,
+.blog-loader-btn .read-more:hover, 
+.hero_content_widget .read-more:hover,
+.pagination .page-numbers.current,
+.widget_search form.search-form button.search-submit,
+.widget_search form.search-form button.search-submit:hover,
+.widget_search form.search-form button.search-submit:focus { 
+    background-color: #070e31; 
+    border-color: #070e31; 
+}
+#top-menu ul li,
+#respond input[type="submit"],
+.blog-loader-btn .read-more:hover,
+.widget_search form.search-form input,
+.blog-posts-wrapper .entry-container a.btn.btn-transparent,
+.single-post .entry-meta span.tags-links a,
+.gallery .overlay .entry-header .entry-title,
+.blog-loader-btn .read-more,
+.hero_content_widget .read-more,
+.wpcf7 input, 
+.wpcf7 textarea,
+.wpcf7 input.wpcf7-form-control.wpcf7-submit,
+.hero_content_widget .read-more:hover { 
+    border-color: #070e31; 
+}
+.site-title a,
+.main-navigation a:hover,
+.main-navigation a:focus,
+.page-header span.author-name,
+.blog-posts-wrapper .entry-container a.btn.btn-transparent,
+.comment-meta .url,
+.comment-meta .fn,
+.single-post .entry-meta span,
+.single-post .entry-meta span a,
+.entry-title,
+#message-from-author .entry-title,
+article .entry-title a,
+.entry-meta > span,
+.entry-meta > span a,
+.pagination a.page-numbers,
+.slick-dots li.slick-active button:before,
+.widget_contact_info label { 
+    color: #070e31; 
+}
+.main-navigation svg,
+.main-navigation svg.icon-right,
+.filter-posts-tag svg.icon.icon-tag,
+.filter-posts-category svg.icon.icon-list,
+#secondary .social_widget .social-icons ul.list-inline li svg,
+.navigation.pagination svg,
+.navigation.posts-navigation svg, 
+.navigation.post-navigation svg { 
+    fill: #070e31; 
+}
+
+@media screen and (min-width: 1024px){
+.main-navigation ul.sub-menu,
+.main-navigation ul.sub-menu li:hover > a, 
+.main-navigation ul.sub-menu li:focus > a {
+    background-color: #070e31;
+} }
+@media screen and (max-width: 1023px){
+.main-navigation {
+    background-color: #070e31;
+}
+.main-navigation .dropdown-toggle svg,
+.main-navigation li.menu-item-has-children ul li svg {
+    fill: #070e31;
+}
+.main-navigation svg {
+    fill: #fff;
+}
+.main-navigation svg.icon-search,
+.main-navigation .search.search-open svg.icon-close,
+.main-navigation svg.icon-down {
+    fill: #070e31;
+}
