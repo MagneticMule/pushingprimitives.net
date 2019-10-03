@@ -14,7 +14,7 @@ users:
       - sudo
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
-       - https://github.com/magneticmule.keys
+       - https://github.com/MagneticMule.keys
 
 web_user: web
 web_group: www-data
