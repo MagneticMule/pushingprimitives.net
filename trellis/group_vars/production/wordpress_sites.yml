@@ -9,8 +9,8 @@ wordpress_sites:
         redirects:
           - www.pushingprimitives.net
     local_path: ../pp # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:MagneticMule/pushingprimitives.net.git # replace with your Git repo URL
-    repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
+    repo: git@github.com:magneticmule/pushingprimitives.net.git # replace with your Git repo URL
+    repo_subtree_path: pp # relative path to your Bedrock/WP directory in your repo
     branch: master
     multisite:
       enabled: false
