@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e29c32835360523831194578f568a66",
+    "content-hash": "266fa45f0925581e6556ad8f28b98d3a",
     "packages": [
         {
             "name": "composer/installers",
@@ -127,6 +127,15 @@
                 "zikula"
             ],
             "time": "2019-08-12T15:00:31+00:00"
+        },
+        {
+            "name": "hrsetyono/wp-sync-db",
+            "version": "1.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/hrsetyono/wp-sync-db/archive/1.7.0.zip"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "oscarotero/env",
@@ -527,24 +536,6 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
-        },
-        {
-            "name": "wp-sync-db/wp-sync-db",
-            "version": "1.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/wp-sync-db/wp-sync-db/archive/1.5.zip"
-            },
-            "type": "wordpress-plugin"
-        },
-        {
-            "name": "wp-sync-db/wp-sync-db-media-files",
-            "version": "1.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/1.1.5.zip"
-            },
-            "type": "wordpress-plugin"
         }
     ],
     "packages-dev": [

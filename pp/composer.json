@@ -27,12 +27,12 @@
    {
         "type": "package",
         "package": {
-            "name": "wp-sync-db/wp-sync-db",
+            "name": "hrsetyono/wp-sync-db",
             "type": "wordpress-plugin",
-            "version": "1.5",
+            "version": "1.7",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/wp-sync-db/wp-sync-db/archive/1.5.zip"
+                "url": "https://github.com/hrsetyono/wp-sync-db/archive/1.7.0.zip"
             }
         }
     },
@@ -41,10 +41,10 @@
       "package": {
         "name": "wp-sync-db/wp-sync-db-media-files",
         "type": "wordpress-plugin",
-        "version": "1.5",
+        "version": "1.7.0",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/1.1.5.zip"
+          "url": "https://github.com/hrsetyono/wp-sync-db/archive/1.7.0.zip"
         }
       }
     },
@@ -61,8 +61,7 @@
     "roots/wordpress": "5.2.3",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wp-sync-db/wp-sync-db": "*",
-    "wp-sync-db/wp-sync-db-media-files": "*"
+    "hrsetyono/wp-sync-db": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",
